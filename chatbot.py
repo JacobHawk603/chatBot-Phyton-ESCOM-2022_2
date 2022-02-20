@@ -1,6 +1,12 @@
 #importaciones
 import re
 import random
+import json
+
+#cargamos las respuestas del archivo JSON
+
+with open('respuestas.JSON') as archivo:
+    respuestas = json.load(archivo)
 
 #definiciones de métodos utilizados
 def get_response(user_input):
@@ -35,11 +41,12 @@ def check_all_messages(message):
         nonlocal highest_prob
         highest_prob[bot_response] = message_probability(message, list_of_words, single_response, required_words)
 
-    response('Helo there', ['que','honda', 'hola'], single_response = True)
-    response('bien gracias', ['como','estas'], required_words=['como'])
+    response(respuestas['saludo'][random.randint(0,2)]['respuesta'], ['que','honda', 'hola'], single_response = True)
+    response(respuestas['estado'][random.randint(0,2)]['respuesta'], ['como','estas'], required_words=['como'])
+    
 
     best_match = max(highest_prob, key=highest_prob.get)
-    print(highest_prob)
+    #print(highest_prob)
 
     return unknown() if highest_prob[best_match] < 1 else best_match
 

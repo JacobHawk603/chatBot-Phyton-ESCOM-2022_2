@@ -1,0 +1,13 @@
+{
+    "saludo":[
+        {"respuesta":"Hola como estas?"},
+        {"respuesta":"hello there"},
+        {"respuesta":"que onda!!!"}
+    ],
+    
+    "estado":[
+        {"respuesta": "bien gracias, dime, ¿como puedo ayudarte?"},
+        {"respuesta": "me encuentro muy bien!!! Disponible para ayudarte en lo que necesites!"},
+        {"respuesta": "al 100%, esperando que mis servicios te sean de utilidad, ¿en que te puedo ayudar?"}
+    ]
+}
