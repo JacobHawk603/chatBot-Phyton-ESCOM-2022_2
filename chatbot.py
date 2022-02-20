@@ -47,6 +47,13 @@ def check_all_messages(message):
     response(respuestas['articulo2'][0]['respuesta'], ['articulo', 'dos'], required_words=['articulo', 'dos'])
     response(respuestas['articulo3'][0]['respuesta'], ['articulo', 'tres'], required_words=['articulo', 'tres'])
     response(respuestas['articulo4'][0]['respuestaPrincipal'], ['articulo', 'cuatro'], required_words=['articulo', 'cuatro'])
+    response(respuestas['articulo5'][0]['respuesta'], ['articulo', 'cinco'], required_words=['articulo', 'cinco'])
+    response(respuestas['articulo6'][0]['respuesta'], ['articulo', 'seis'], required_words=['articulo', 'seis'])
+    response(respuestas['articulo7'][0]['respuesta'], ['articulo', 'siete'], required_words=['articulo', 'siete'])
+    response(respuestas['articulo8'][0]['respuesta'], ['articulo', 'ocho'], required_words=['articulo', 'ocho'])
+    response(respuestas['articulo9'][0]['respuesta'], ['articulo', 'nueve'], required_words=['articulo', 'nueve'])
+    response(respuestas['articulo10'][0]['respuesta'], ['articulo', 'diez'], required_words=['articulo', 'diez'])
+    response(respuestas['articulo11'][0]['respuesta'], ['articulo', 'once'], required_words=['articulo', 'once'])
 
     best_match = max(highest_prob, key=highest_prob.get)
     #print(highest_prob)
