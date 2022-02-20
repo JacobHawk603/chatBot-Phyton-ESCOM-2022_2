@@ -41,9 +41,12 @@ def check_all_messages(message):
         nonlocal highest_prob
         highest_prob[bot_response] = message_probability(message, list_of_words, single_response, required_words)
 
-    response(respuestas['saludo'][random.randint(0,2)]['respuesta'], ['que','honda', 'hola'], single_response = True)
-    response(respuestas['estado'][random.randint(0,2)]['respuesta'], ['como','estas'], required_words=['como'])
-    
+    response(respuestas['saludo'][random.randint(0,2)]['respuesta'], ['que','onda', 'hola'], single_response = True)
+    response(respuestas['estado'][random.randint(0,2)]['respuesta'], ['como','estas'], required_words=['como', 'estas'])
+    response(respuestas['articulo1'][0]['respuesta'], ['articulo', 'uno'], required_words=['articulo', 'uno'])
+    response(respuestas['articulo2'][0]['respuesta'], ['articulo', 'dos'], required_words=['articulo', 'dos'])
+    response(respuestas['articulo3'][0]['respuesta'], ['articulo', 'tres'], required_words=['articulo', 'tres'])
+    response(respuestas['articulo4'][0]['respuestaPrincipal'], ['articulo', 'cuatro'], required_words=['articulo', 'cuatro'])
 
     best_match = max(highest_prob, key=highest_prob.get)
     #print(highest_prob)
