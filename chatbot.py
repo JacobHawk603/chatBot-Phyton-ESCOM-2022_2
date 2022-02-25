@@ -120,7 +120,7 @@ def check_all_messages(message):
     return unknown() if highest_prob[best_match] < 1 else best_match
 
 def unknown():
-    response = ['Puedes ser mas especifico', 'no entendi', 'puedes repetirlo'][random.randrange(3)]
+    response = ['Puedes ser mas específico', 'no entendí', 'puedes repetirlo'][random.randrange(3)]
     return response
 #comenzaremos creando un bucle para que el bot siempre esté a la espera de las preguntas
 
