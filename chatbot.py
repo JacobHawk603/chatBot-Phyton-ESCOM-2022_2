@@ -26,13 +26,6 @@ import json
 
 with open('respuestas.JSON') as archivo:
     respuestas = json.load(archivo)
-
-def format_word(self, w):
-        replacements = [["á", "a"], ["é", "e"], ["í", "i"], ["ó", "o"], ["ú", "u"]]
-        [w.replace(letter[0], letter[1]) for letter in replacements]
-        re.sub(";:_,.-¿\?¡!¨´\*+!\"#$%&/\(\)=\|°¬", "", w)
-        return w
-
 #definiciones de métodos utilizados
 def get_response(user_input):
     #eliminamos de la entrada caracteres especiales
