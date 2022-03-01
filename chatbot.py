@@ -4,28 +4,34 @@ import random
 import json
 
 #Elementos de interfaz grafica
-from tkinter import *
-from tkinter import ttk
-from turtle import left
+#from tkinter import *
+#from tkinter import ttk
+#from turtle import left
 
 #creamos la ventana del chat
-mainFrame = Tk()
-mainFrame.geometry("350x500")
-frm = Frame(mainFrame)
-frm.pack()
+#mainFrame = Tk()
+#mainFrame.geometry("350x500")
+#frm = Frame(mainFrame)
+#frm.pack()
 
 #agregamos los elementos disponibles en la ventana
-entrada= Entry(width=50)
-send = ttk.Button(text="enviar")
+#entrada= Entry(width=50)
+#send = ttk.Button(text="enviar")
 
-entrada.insert(0, 'chatea con el bot')
-entrada.pack(side=BOTTOM)
-send.pack(side=BOTTOM)
+#entrada.insert(0, 'chatea con el bot')
+#entrada.pack(side=BOTTOM)
+#send.pack(side=BOTTOM)
 #mainFrame.mainloop()   <- esto se va a usar mas adelante
 #cargamos las respuestas del archivo JSON
 
 with open('respuestas.JSON') as archivo:
     respuestas = json.load(archivo)
+
+def format_word(self, w):
+        replacements = [["á", "a"], ["é", "e"], ["í", "i"], ["ó", "o"], ["ú", "u"]]
+        [w.replace(letter[0], letter[1]) for letter in replacements]
+        re.sub(";:_,.-¿\?¡!¨´\*+!\"#$%&/\(\)=\|°¬", "", w)
+        return w
 
 #definiciones de métodos utilizados
 def get_response(user_input):
