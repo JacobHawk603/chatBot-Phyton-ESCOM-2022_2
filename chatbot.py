@@ -61,6 +61,8 @@ def check_all_messages(message):
     response(respuestas['informes'][random.randint(0,1)]['respuesta'], ['reglamento','transito'], required_words=['reglamento', 'transito'])
     response(respuestas['comedia'][random.randint(0,2)]['respuesta'], ['cuenta','chiste'], required_words=['cuenta', 'chiste'])
     response(respuestas['curiosidades'][random.randint(0,2)]['respuesta'], ['dato','curioso'], required_words=['dato', 'curioso'])
+    response(respuestas['musica'][random.randint(0,2)]['respuesta'], ['escuchas','musica'], required_words=['musica', 'escuchas'])
+    
     response(respuestas['articulo1'][0]['respuesta'], ['articulo', 'uno'], required_words=['articulo', 'uno'])
     response(respuestas['articulo2'][0]['respuesta'], ['articulo', 'dos'], required_words=['articulo', 'dos'])
     response(respuestas['articulo3'][0]['respuesta'], ['articulo', 'tres'], required_words=['articulo', 'tres'])
