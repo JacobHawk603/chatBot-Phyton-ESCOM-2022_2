@@ -55,7 +55,9 @@ def check_all_messages(message):
         highest_prob[bot_response] = message_probability(message, list_of_words, single_response, required_words)
 
     response(respuestas['saludo'][random.randint(0,2)]['respuesta'], ['que','onda', 'hola'], single_response = True)
+    response(respuestas['saludo'][random.randint(0,2)]['respuesta'], ['que','onda', 'hola'], required_words=['hola'])
     response(respuestas['estado'][random.randint(0,2)]['respuesta'], ['como','estas'], required_words=['como', 'estas'])
+    response(respuestas['regresoestado'][random.randint(0,1)]['respuesta'], ['bien','gracias'], required_words=['bien', 'gracias'])
     response(respuestas['articulo1'][0]['respuesta'], ['articulo', 'uno'], required_words=['articulo', 'uno'])
     response(respuestas['articulo2'][0]['respuesta'], ['articulo', 'dos'], required_words=['articulo', 'dos'])
     response(respuestas['articulo3'][0]['respuesta'], ['articulo', 'tres'], required_words=['articulo', 'tres'])
