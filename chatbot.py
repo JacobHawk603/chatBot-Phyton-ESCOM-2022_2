@@ -123,7 +123,7 @@ def check_all_messages(message):
     response(respuestas['articulo58'][0]['respuesta'], ['articulo', 'cincuenta y ocho'], required_words=['articulo', 'cincuenta', 'y', 'ocho'])
     response(respuestas['articulo59'][0]['respuesta'], ['articulo', 'cincuenta y nueve'], required_words=['articulo', 'cincuenta', 'y', 'nueve'])
     response(respuestas['articulo60'][0]['respuesta'], ['articulo', 'sesenta'], required_words=['articulo', 'sesenta'])
-    response(respuestas['articulo61'][0]['respuesta'], ['articulo', 'sesenta y uno'], required_words=['articulo', 'sesenta', 'y', 'uno'])
+    response(respuestas['articulo61'][0]['respuesta'], ['articulo', 'sesenta y uno'], required_words=['articulo', 'sesenta y uno'])
     response(respuestas['articulo62'][0]['respuesta'], ['articulo', 'sesenta y dos'], required_words=['articulo', 'sesenta', 'y', 'dos'])
     response(respuestas['articulo63'][0]['respuesta'], ['articulo', 'sesenta y tres'], required_words=['articulo', 'sesenta', 'y', 'tres'])
     response(respuestas['articulo64'][0]['respuesta'], ['articulo', 'sesenta y cuatro'], required_words=['articulo', 'sesenta', 'y', 'cuatro'])
