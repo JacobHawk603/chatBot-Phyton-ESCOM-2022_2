@@ -23,7 +23,7 @@
     
     "comedia":[
         {"respuesta": "El policía de tráfico detiene a un posible infractor que maneja en la autopista principal de la ciudad: -¿Trae permiso de conducir? -Si oficial, ¡Mi mama me deja!"},
-        {"respuesta": "– ¿Por qué la llanta de repuesto del Land Rover se encuentra en el capó? – Pues para que no se land rover."}
+        {"respuesta": "– ¿Por qué la llanta de repuesto del Land Rover se encuentra en el capó? – Pues para que no se land rover."},
         {"respuesta": "De empresario a empresario: – ¿Cómo consigues que tus empleados lleguen puntuales al trabajo? – Sencillo, tengo 30 empleados, pero sólo 20 aparcamientos."}
     ],
 
@@ -35,7 +35,7 @@
 
     "musica":[
         {"respuesta": "Mi favorita es la sinfonia 5 en do menor"},
-        {"respuesta": "Los corridos de Natael Cano son top"}
+        {"respuesta": "Los corridos de Natael Cano son top"},
         {"respuesta": "Bad bunny yee yee"}
     ],
 
