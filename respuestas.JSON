@@ -11,6 +11,11 @@
         {"respuesta": "al 100%, esperando que mis servicios te sean de utilidad, ¿en que te puedo ayudar?"}
     ],
 
+    "regresoestado":[
+        {"respuesta": "me alegra bastante, dime, ¿como puedo ayudarte?"},
+        {"respuesta": "eso suena excelente!!! Me encuentro disponible para ayudarte en lo que necesites!"}
+    ],
+
     "articulo1":[
         {"respuesta": "Articulo 1.- El presente reglamento tiene por objeto regular la circulación de peatones y vehículos en la vía pública y la seguridad vial en la Ciudad de México.\n\n Las disposiciones de este reglamento son aplicables a peatones, ciclistas, conductores, pasajeros y propietarios de cualquier tipo de vehículo matriculado en el país o el extranjero y que circule en el territorio de la Ciudad de México. En el presente ordenamiento se establecen las normas respecto a sus movimientos y estacionamiento, en observancia a lo establecido en las leyes, reglamentos, acuerdos, decretos y normatividad local vigente, así como las maniobras de ascenso y descenso de pasajeros o de carga y descarga. De igual forma, determina las condiciones legales y de seguridad a las que se deben ajustar los vehículos y sus conductores para su circulación, y establece los esquemas de sanciones por la comisión de infracciones a los preceptos contenidos en el presente reglamento.\n\n Corresponde a la Secretaría de Seguridad Ciudadana aplicar sanciones por infracciones a las disposiciones de este Reglamento. Corresponde a la Consejería Jurídica y de Servicios Legales, mediante la Dirección Ejecutiva de Justicia Cívica, supervisar el cumplimiento de los trabajos a favor de la comunidad.\n\n En todo lo no previsto en el presente ordenamiento se aplicará de manera supletoria las disposiciones contenidas en la Ley de Movilidad de la Ciudad de México, en la Ley de Cultura Cívica de la Ciudad de México, Reglamento de la Ley de Cultura Cívica vigente en la Ciudad de México, en los programas ambientales y de seguridad vial."}
     ],
