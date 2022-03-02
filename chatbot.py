@@ -86,7 +86,7 @@ def check_all_messages(message):
     response(respuestas['articulo28'][0]['respuesta'], ['articulo', 'veintiocho'], required_words=['articulo', 'veintiocho'])
     response(respuestas['articulo29'][0]['respuesta'], ['articulo', 'veintinueve'], required_words=['articulo', 'veintinueve'])
     response(respuestas['articulo30'][0]['respuesta'], ['articulo', 'treinta'], required_words=['articulo', 'treinta'])
-    response(respuestas['articulo31'][0]['respuesta'], ['articulo', 'treinta y uno'], required_words=['articulo', 'treint','y', 'uno'])
+    response(respuestas['articulo31'][0]['respuesta'], ['articulo', 'treinta y uno'], required_words=['articulo', 'treinta','y', 'uno'])
     response(respuestas['articulo32'][0]['respuesta'], ['articulo', 'treinta y dos'], required_words=['articulo', 'treinta', 'y', 'dos'])
     response(respuestas['articulo33'][0]['respuesta'], ['articulo', 'treinta y tres'], required_words=['articulo', 'treinta', 'y', 'tres'])
     response(respuestas['articulo34'][0]['respuesta'], ['articulo', 'treinta y cuatro'], required_words=['articulo', 'treinta', 'y', 'cuatro'])
