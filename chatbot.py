@@ -11,9 +11,9 @@ import tkinter
 from tkinter import font
 from turtle import left
 
-BG_GRAY = "#ABB2B9"
-BG_COLOR = "#17202A"
-TEXT_COLOR = "#EAECEE"
+BG_BUTTON = "#00A0E3"
+BG_COLOR = "#1DE3CB"
+TEXT_COLOR = "#040404"
 
 FONT = "Helvetica 8"
 FONT_BOLD = "Helvetica 10 bold"
@@ -67,6 +67,7 @@ def check_all_messages(message):
     response(respuestas['comedia'][random.randint(0,2)]['respuesta'], ['cuenta','chiste'], required_words=['cuenta', 'chiste'])
     response(respuestas['curiosidades'][random.randint(0,2)]['respuesta'], ['dato','curioso'], required_words=['dato', 'curioso'])
     response(respuestas['musica'][random.randint(0,2)]['respuesta'], ['escuchas','musica'], required_words=['musica', 'escuchas'])
+    response(respuestas['verificacion'][0]['respuesta'], ['consultar','verificacion'], required_words=['consultar', 'verificacion'])
     
     response(respuestas['articulo1'][0]['respuesta'], ['articulo', 'uno'], required_words=['articulo', 'uno'])
     response(respuestas['articulo2'][0]['respuesta'], ['articulo', 'dos'], required_words=['articulo', 'dos'])
@@ -164,16 +165,16 @@ while True:
             self.window.resizable(width=True, height=True)
             self.window.configure(width=1000, height=550, bg=BG_COLOR)
             
-            # head label
+            # etiqueta de encabezado
             head_label = Label(self.window, bg=BG_COLOR, fg=TEXT_COLOR,
                             text="Bienvenido", font=FONT_BOLD, pady=10)
             head_label.place(relwidth=1)
             
-            # tiny divider
-            line = Label(self.window, width=450, bg=BG_GRAY)
+            # divisor entre encabezado y cuerpo
+            line = Label(self.window, width=450, bg=BG_BUTTON)
             line.place(relwidth=1, rely=0.07, relheight=0.012)
             
-            # text widget
+            # Caja de texto donde se despliega la conversación
             self.text_widget = Text(self.window, width=20, height=1, bg=BG_COLOR, fg=TEXT_COLOR,
                                     font=FONT, padx=3, pady=5)
             self.text_widget.place(relheight=0.745, relwidth=1, rely=0.08)
@@ -184,18 +185,18 @@ while True:
             scrollbar.place(relheight=1, relx=0.974)
             scrollbar.configure(command=self.text_widget.yview)
             
-            # bottom label
-            bottom_label = Label(self.window, bg=BG_GRAY, height=30)
+            # etiqueta inferior
+            bottom_label = Label(self.window, bg=BG_BUTTON, height=30)
             bottom_label.place(relwidth=1, rely=0.925)
             
-            # message entry box
-            self.msg_entry = Entry(bottom_label, bg="#2C3E50", fg=TEXT_COLOR, font=FONT)
+            # caja de mensaje de entrada
+            self.msg_entry = Entry(bottom_label, bg="#0070A1", fg=TEXT_COLOR, font=FONT)
             self.msg_entry.place(relwidth=0.74, relheight=0.06, rely=0.008, relx=0.011)
             self.msg_entry.focus()
             self.msg_entry.bind("<Return>", self._on_enter_pressed)
             
-            # send button
-            send_button = Button(bottom_label, text="Enviar", font=FONT_BOLD, width=20, bg=BG_GRAY,
+            # boton de enviar
+            send_button = Button(bottom_label, text="Enviar", font=FONT_BOLD, width=20, bg=BG_BUTTON,
                                 command=lambda: self._on_enter_pressed(None))
             send_button.place(relx=0.77, rely=0.008, relheight=0.06, relwidth=0.22)
         
