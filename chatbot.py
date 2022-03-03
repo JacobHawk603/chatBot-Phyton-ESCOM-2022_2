@@ -161,7 +161,7 @@ while True:
             self.window.mainloop()
             
         def _setup_main_window(self):
-            self.window.title("Chat")
+            self.window.title("Hermes Bot")
             self.window.resizable(width=True, height=True)
             self.window.configure(width=1000, height=550, bg=BG_COLOR)
             
