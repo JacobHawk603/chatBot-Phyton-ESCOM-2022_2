@@ -18,7 +18,7 @@ TEXT_COLOR = "#EAECEE"
 FONT = "Helvetica 8"
 FONT_BOLD = "Helvetica 10 bold"
 
-bot_name = "bot"
+bot_name = "Hermes Bot"
 
 #cargamos las respuestas del archivo JSON
 
